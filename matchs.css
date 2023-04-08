@@ -76,6 +76,7 @@ body {
 
 /* header area end */
 
+
 .match-schedule-wrapper {
     padding: 50px 0;
 }
@@ -136,72 +137,55 @@ body {
 }
 
 
-.match-summary-wrapper {
+
+.today-match {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 23px;
+    grid-gap: 25px;
 }
 
-.players {
-    border-radius: 10px;
-    box-shadow: 0px -1px 3px 0px;
-}
-
-.players img {
-    width: 100%;
-}
-
-.one-block {
-    padding: 20px;
-}
-
-.transfer-btn {
-    padding: 5px 20px;
-    border: 1px solid black;
-    display: inline-block;
+.germany-france {
+    padding: 40px 15px;
+    border: 1px solid #dfdfdf;
     border-radius: 5px;
-    margin-bottom: 15px;
 }
 
-.transfer-btn a {
-    text-decoration: none;
-    color: black;
-}
-
-.one-block h3 {
-    font-size: 16px;
-    margin-bottom: 15px;
-}
-
-.hours-message-w {
+.versus {
     display: flex;
+    justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
 }
 
-.clock {
-    margin-right: 30px;
+
+.versus img {
+    width: 100%;
+    display: block;
 }
 
-.clock p {
-    display: inline-block;
+.versus h2 {
+    padding: 15px;
 }
 
-.message p {
-    display: inline-block;
+.text-area {
+    text-align: center;
 }
 
-.fa-clock {
-    margin-right: 7px;
+.text-area h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
-.fa-message {
-    margin-right: 7px;
+.text-area p {
+    font-size: 14px;
 }
 
-/* match schedule end */
+
+/* 2nd section end */
 
 footer {
     background: #161616;
+    margin-top: 50px;
 }
 
 .footer-area-wrapper {
