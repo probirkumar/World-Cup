@@ -87,12 +87,14 @@ body {
 }
 
 .menu-section {
-    flex: 0 0 23%;
-    padding-right: 15px;
+    flex: 0 0 28%;
 }
 
-.match-summary {
-    flex: 0 0 76%;
+.today-match {
+    flex: 0 0 70%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
 }
 
 .menu-section-wrapper {
@@ -101,7 +103,32 @@ body {
     border-radius: 10px;
 }
 
-.menu-btn {
+ul#menu {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+}
+
+li.same-btn a {
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    border: 1px solid #ededed;
+    border-radius: 10px;
+    text-align: center;
+    background: #ffffff;
+    color: #161616;
+    font-size: 18px;
+}
+
+ul#menu .active a {
+    background: #DD0000;
+    color: #fff;
+    border: 1px solid #DD0000;
+}
+
+/* .menu-btn {
     background: #FFFFFF;
     border-radius: 5px;
     margin: 20px 0;
@@ -134,15 +161,8 @@ body {
 .red-btn-w a {
     text-decoration: none;
     color: white;
-}
+} */
 
-
-
-.today-match {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 25px;
-}
 
 .germany-france {
     padding: 40px 15px;
@@ -151,8 +171,14 @@ body {
 }
 
 .versus {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     margin-bottom: 20px;
 }
@@ -164,7 +190,7 @@ body {
 }
 
 .versus h2 {
-    padding: 15px;
+    padding: 0 15px;
 }
 
 .text-area {
@@ -204,13 +230,14 @@ hr {
 }
 
 .contact-area-w {
-    padding: 30px;
+    padding-top: 30px;
 }
 
 .contact-area-w ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .contact-area-w ul li {
